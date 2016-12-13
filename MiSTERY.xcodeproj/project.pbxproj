@@ -19,6 +19,9 @@
 		570650631DF3FCA6008B9DF0 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570650621DF3FCA6008B9DF0 /* HistoryViewController.m */; };
 		570650661DF3FCB5008B9DF0 /* MysteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570650651DF3FCB5008B9DF0 /* MysteryViewController.m */; };
 		570650681DF403D9008B9DF0 /* aburata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570650671DF403D9008B9DF0 /* aburata.jpg */; };
+		570DA8CC1DFAFBE400864087 /* MxEPd1A5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 570DA8CB1DFAFBE400864087 /* MxEPd1A5.jpeg */; };
+		570DA8CE1DFAFC3800864087 /* Fotolia_35400387_Subscription_Monthly_M-670x443.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 570DA8CD1DFAFC3800864087 /* Fotolia_35400387_Subscription_Monthly_M-670x443.jpg */; };
+		570DA8D11DFAFDA900864087 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570DA8D01DFAFDA900864087 /* HomeViewController.m */; };
 		574F3FB41DF3AC64005FB753 /* CellTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 574F3FB31DF3AC64005FB753 /* CellTest.png */; };
 		574F3FB61DF3AD9A005FB753 /* CellTap.png in Resources */ = {isa = PBXBuildFile; fileRef = 574F3FB51DF3AD9A005FB753 /* CellTap.png */; };
 		57EF29411DE9BF8600B067D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF29401DE9BF8600B067D4 /* main.m */; };
@@ -76,6 +79,10 @@
 		570650641DF3FCB5008B9DF0 /* MysteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MysteryViewController.h; path = ViewController/MysteryViewController.h; sourceTree = "<group>"; };
 		570650651DF3FCB5008B9DF0 /* MysteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MysteryViewController.m; path = ViewController/MysteryViewController.m; sourceTree = "<group>"; };
 		570650671DF403D9008B9DF0 /* aburata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = aburata.jpg; path = resource/aburata.jpg; sourceTree = "<group>"; };
+		570DA8CB1DFAFBE400864087 /* MxEPd1A5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MxEPd1A5.jpeg; path = resource/MxEPd1A5.jpeg; sourceTree = "<group>"; };
+		570DA8CD1DFAFC3800864087 /* Fotolia_35400387_Subscription_Monthly_M-670x443.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Fotolia_35400387_Subscription_Monthly_M-670x443.jpg"; path = "resource/Fotolia_35400387_Subscription_Monthly_M-670x443.jpg"; sourceTree = "<group>"; };
+		570DA8CF1DFAFDA900864087 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewController/HomeViewController.h; sourceTree = "<group>"; };
+		570DA8D01DFAFDA900864087 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewController/HomeViewController.m; sourceTree = "<group>"; };
 		574F3FB31DF3AC64005FB753 /* CellTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellTest.png; sourceTree = "<group>"; };
 		574F3FB51DF3AD9A005FB753 /* CellTap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CellTap.png; sourceTree = "<group>"; };
 		57EF293C1DE9BF8600B067D4 /* MiSTERY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSTERY.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +239,8 @@
 				570650621DF3FCA6008B9DF0 /* HistoryViewController.m */,
 				570650641DF3FCB5008B9DF0 /* MysteryViewController.h */,
 				570650651DF3FCB5008B9DF0 /* MysteryViewController.m */,
+				570DA8CF1DFAFDA900864087 /* HomeViewController.h */,
+				570DA8D01DFAFDA900864087 /* HomeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -270,12 +279,14 @@
 				570650511DF3F799008B9DF0 /* 1480856665_gear.png */,
 				574F3FB31DF3AC64005FB753 /* CellTest.png */,
 				574F3FB51DF3AD9A005FB753 /* CellTap.png */,
+				570DA8CD1DFAFC3800864087 /* Fotolia_35400387_Subscription_Monthly_M-670x443.jpg */,
 				570650551DF3F936008B9DF0 /* cell_blue.png */,
 				570650561DF3F936008B9DF0 /* cell_green.png */,
 				570650571DF3F936008B9DF0 /* cell_Red.png */,
 				5706505B1DF3F9CA008B9DF0 /* cell_blue_tap.png */,
 				5706505C1DF3F9CA008B9DF0 /* cell_green_tap.png */,
 				5706505D1DF3F9CA008B9DF0 /* cell_Red_tap.png */,
+				570DA8CB1DFAFBE400864087 /* MxEPd1A5.jpeg */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -402,6 +413,8 @@
 				574F3FB41DF3AC64005FB753 /* CellTest.png in Resources */,
 				570650601DF3F9CA008B9DF0 /* cell_Red_tap.png in Resources */,
 				5706505E1DF3F9CA008B9DF0 /* cell_blue_tap.png in Resources */,
+				570DA8CE1DFAFC3800864087 /* Fotolia_35400387_Subscription_Monthly_M-670x443.jpg in Resources */,
+				570DA8CC1DFAFBE400864087 /* MxEPd1A5.jpeg in Resources */,
 				570650681DF403D9008B9DF0 /* aburata.jpg in Resources */,
 				574F3FB61DF3AD9A005FB753 /* CellTap.png in Resources */,
 			);
@@ -436,6 +449,7 @@
 				57EF29791DE9C05E00B067D4 /* LoginController.m in Sources */,
 				5706504F1DF3E003008B9DF0 /* peopleInformation.m in Sources */,
 				570650631DF3FCA6008B9DF0 /* HistoryViewController.m in Sources */,
+				570DA8D11DFAFDA900864087 /* HomeViewController.m in Sources */,
 				57EF29891DEAA25E00B067D4 /* MyCollectionViewCell.m in Sources */,
 				57EF29411DE9BF8600B067D4 /* main.m in Sources */,
 				57EF29901DEAA86F00B067D4 /* CollectionviewHeader.m in Sources */,

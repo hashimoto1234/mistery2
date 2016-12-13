@@ -9,6 +9,14 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mystoryTitle;
+@property (weak, nonatomic) IBOutlet UILabel *mystoryInfo;
+@property (weak, nonatomic) IBOutlet UILabel *historyTitle;
+@property (weak, nonatomic) IBOutlet UILabel *historyInfo;
+@property (weak, nonatomic) IBOutlet UILabel *misteryTitle;
+@property (weak, nonatomic) IBOutlet UILabel *misteryInfo;
 
 @end
 
@@ -16,7 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    _imageView.image = [UIImage imageNamed:_selectedInfo.image];
+
+
 }
 
 - (void)didReceiveMemoryWarning {

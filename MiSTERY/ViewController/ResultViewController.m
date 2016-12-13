@@ -15,6 +15,10 @@
 
 @property NSArray * resultArray;
 
+@property NSInteger selectedIndex;
+
+@property peopleInformation * selectedInfo;
+
 
 @end
 
@@ -113,6 +117,9 @@
 
     //検索結果詳細画面へ遷移
     DetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    
+    detailVC.selectedInfo = _resultArray[indexPath.row];
+    
     [self.navigationController pushViewController:detailVC animated:YES];
     
 }

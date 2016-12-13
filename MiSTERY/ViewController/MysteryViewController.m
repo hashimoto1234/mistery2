@@ -7,6 +7,7 @@
 //
 
 #import "MysteryViewController.h"
+#import "ResultViewController.h"
 
 @interface MysteryViewController ()
 
@@ -210,6 +211,9 @@
     }else{
         cell.myImageView.image = [UIImage imageNamed:@"cell_Red.png"];
     }
+    
+    ResultViewController * result = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
+    [self.navigationController pushViewController:result animated:YES];
     
 }
 

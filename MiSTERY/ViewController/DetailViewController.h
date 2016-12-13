@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "peopleInformation.h"
 
 @interface DetailViewController : UIViewController
+
+@property peopleInformation * selectedInfo;
 
 @end

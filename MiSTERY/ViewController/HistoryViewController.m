@@ -7,6 +7,7 @@
 //
 
 #import "HistoryViewController.h"
+#import "MysteryViewController.h"
 
 @interface HistoryViewController ()
 
@@ -211,6 +212,8 @@
         cell.myImageView.image = [UIImage imageNamed:@"cell_Red.png"];
     }
     
+    MysteryViewController * mystery = [self.storyboard instantiateViewControllerWithIdentifier:@"MysteryViewController"];
+    [self.navigationController pushViewController:mystery animated:YES];
 }
 
 

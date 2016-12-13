@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "ResultViewController.h"
+#import "HistoryViewController.h"
 
 
 @interface SearchViewController ()
@@ -212,6 +213,9 @@
     }else{
         cell.myImageView.image = [UIImage imageNamed:@"cell_Red.png"];
     }
+    
+    HistoryViewController * history = [self.storyboard instantiateViewControllerWithIdentifier:@"HistoryViewController"];
+    [self.navigationController pushViewController:history animated:YES];
     
 }
 
