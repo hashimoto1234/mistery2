@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MyCollectionViewCell.h"
 #import "CollectionviewHeader.h"
+#import "DropDownTableViewController.h"
+#import "DropDownView.h"
 
-@interface SearchViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface SearchViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end

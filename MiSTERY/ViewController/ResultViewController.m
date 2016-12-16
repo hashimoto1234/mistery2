@@ -36,7 +36,8 @@
     [_resultTableView registerNib:nibFirst forCellReuseIdentifier:@"ResultTableViewCell"];
     
     
-    //検索結果として表示する仮データ
+    //-------------------検索結果として表示する仮データ----------------------------
+    
     peopleInformation * pi1 = [[peopleInformation alloc]init];
     pi1.name = @"橋本直樹";
     pi1.age = @"24";
@@ -49,6 +50,7 @@
     pi1.mysteryInfo = @"好きな時に釣りがしたい";
     pi1.basicInfo = @"大阪屈指の器用貧乏";
     pi1.image = @"hashimoto.JPG";
+    pi1.status = @"(株)AHD代表";
     
     peopleInformation * pi2 = [[peopleInformation alloc]init];
     pi2.name = @"油田一貴";
@@ -62,9 +64,13 @@
     pi2.mysteryInfo = @"O2Oでてっぺんとったんで";
     pi2.basicInfo = @"おしゃれ番長";
     pi2.image = @"aburata.jpg";
-    
+    pi2.status = @"(株)OMOROI代表";
     
     _resultArray = @[pi1, pi2];
+    
+    
+    //-------------------検索結果として表示する仮データ----------------------------
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,23 +91,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString* CellIdentifier = @"ResultTableViewCell";
-    ResultTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ResultTableViewCell* cell = [_resultTableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     //表示データを取得
     peopleInformation * displayInfo = _resultArray[indexPath.row];
     
-    cell.resultNameLabel.text = displayInfo.name;
-    cell.resultInfoLabel.text = displayInfo.basicInfo;
-    cell.mystoryLabel.text = displayInfo.mystory;
+    cell.nameLabel.text = displayInfo.name;
+    cell.myStroyLabel.text = displayInfo.mystory;
     cell.historyLabel.text = displayInfo.history;
     cell.mysteryLabel.text = displayInfo.mystery;
-    cell.mystoryInfo.text = displayInfo.mystoryInfo;
-    cell.historyInfo.text = displayInfo.historyInfo;
-    cell.mysteryInfo.text = displayInfo.mysteryInfo;
+    cell.statusLabel.text = displayInfo.status;
     
+    //一言情報
+    cell.infoLabel.text = displayInfo.basicInfo;
     
-    
-    cell.resultImageView.image = [UIImage imageNamed:displayInfo.image];
+    //写真
+    cell.image.image = [UIImage imageNamed:displayInfo.image];
     
     cell.clipsToBounds = YES;//frameサイズ外を描画しない
     return cell;

@@ -10,4 +10,8 @@
 
 @implementation keyWordDefinition
 
+const float DURATION 2.0f;
+NSString* const SEGUE_A_TO_B = @"segueAtoB";
+
+
 @end

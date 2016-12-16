@@ -10,4 +10,9 @@
 
 @interface keyWordDefinition : NSObject
 
+extern const float DURATION;
+extern NSString* const SEGUE_A_TO_B;
+
+
+
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DropDownView : UIView
+@interface DropDownView : UIView<UITableViewDelegate, UITableViewDataSource>
+
+@property NSArray * industryArray;
 
 @end

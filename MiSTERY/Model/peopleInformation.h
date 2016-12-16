@@ -41,4 +41,7 @@
 //写真のファイル名
 @property (nonatomic, strong) NSString * image;
 
+//肩書き
+@property (nonnull , strong) NSString * status;
+
 @end

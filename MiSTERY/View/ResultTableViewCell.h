@@ -9,14 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *resultImageView;
-@property (weak, nonatomic) IBOutlet UILabel *resultNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *resultInfoLabel;
-@property (weak, nonatomic) IBOutlet UILabel *mystoryLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+
+@property (weak, nonatomic) IBOutlet UILabel *myStroyLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *historyLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *mysteryLabel;
-@property (weak, nonatomic) IBOutlet UILabel *mystoryInfo;
-@property (weak, nonatomic) IBOutlet UILabel *historyInfo;
-@property (weak, nonatomic) IBOutlet UILabel *mysteryInfo;
+
+@property (weak, nonatomic) IBOutlet UITextView *infoLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+
 
 @end
