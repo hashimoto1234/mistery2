@@ -18,6 +18,19 @@
 		571751481E02E50F006B780D /* result-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 571751471E02E50F006B780D /* result-back.png */; };
 		5717514E1E03EA0D006B780D /* 1481901759_like-thumbs-up-hand-social-media.png in Resources */ = {isa = PBXBuildFile; fileRef = 5717514C1E03EA0D006B780D /* 1481901759_like-thumbs-up-hand-social-media.png */; };
 		5717514F1E03EA0D006B780D /* 1481901776_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5717514D1E03EA0D006B780D /* 1481901776_mail.png */; };
+		571751531E0568F2006B780D /* blue-select.png in Resources */ = {isa = PBXBuildFile; fileRef = 571751501E0568F2006B780D /* blue-select.png */; };
+		571751541E0568F2006B780D /* green-select.png in Resources */ = {isa = PBXBuildFile; fileRef = 571751511E0568F2006B780D /* green-select.png */; };
+		571751551E0568F2006B780D /* red-select.png in Resources */ = {isa = PBXBuildFile; fileRef = 571751521E0568F2006B780D /* red-select.png */; };
+		571751571E057021006B780D /* 1482001656_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 571751561E057021006B780D /* 1482001656_home.png */; };
+		5717515B1E06103B006B780D /* thumbnailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 571751591E06103B006B780D /* thumbnailCollectionViewCell.m */; };
+		5717515C1E06103B006B780D /* thumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5717515A1E06103B006B780D /* thumbnailCollectionViewCell.xib */; };
+		5717515F1E063527006B780D /* 1482052073_More.png in Resources */ = {isa = PBXBuildFile; fileRef = 5717515D1E063527006B780D /* 1482052073_More.png */; };
+		571751601E063527006B780D /* 1482052087_People-MSN.png in Resources */ = {isa = PBXBuildFile; fileRef = 5717515E1E063527006B780D /* 1482052087_People-MSN.png */; };
+		571751631E0638D9006B780D /* shigemi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571751611E0638D9006B780D /* shigemi.jpg */; };
+		571751641E0638D9006B780D /* yoshimi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571751621E0638D9006B780D /* yoshimi.jpg */; };
+		571751661E064064006B780D /* yumemiru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571751651E064064006B780D /* yumemiru.jpg */; };
+		571751681E06417A006B780D /* Powerup_fpv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571751671E06417A006B780D /* Powerup_fpv.jpg */; };
+		5717516A1E064297006B780D /* photo_00111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571751691E064297006B780D /* photo_00111.jpg */; };
 		572A1A691E02B96E006F0604 /* MiSTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 572A1A651E02B96D006F0604 /* MiSTERY.png */; };
 		572A1A711E02BBEE006F0604 /* 背景オレンジ.png in Resources */ = {isa = PBXBuildFile; fileRef = 572A1A701E02BBEE006F0604 /* 背景オレンジ.png */; };
 		572A1A7F1E02C31E006F0604 /* blue-tag-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 572A1A781E02C31E006F0604 /* blue-tag-selected.png */; };
@@ -99,6 +112,20 @@
 		571751471E02E50F006B780D /* result-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "result-back.png"; sourceTree = "<group>"; };
 		5717514C1E03EA0D006B780D /* 1481901759_like-thumbs-up-hand-social-media.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1481901759_like-thumbs-up-hand-social-media.png"; sourceTree = "<group>"; };
 		5717514D1E03EA0D006B780D /* 1481901776_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1481901776_mail.png; sourceTree = "<group>"; };
+		571751501E0568F2006B780D /* blue-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-select.png"; sourceTree = "<group>"; };
+		571751511E0568F2006B780D /* green-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-select.png"; sourceTree = "<group>"; };
+		571751521E0568F2006B780D /* red-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-select.png"; sourceTree = "<group>"; };
+		571751561E057021006B780D /* 1482001656_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1482001656_home.png; sourceTree = "<group>"; };
+		571751581E06103B006B780D /* thumbnailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thumbnailCollectionViewCell.h; path = View/thumbnailCollectionViewCell.h; sourceTree = "<group>"; };
+		571751591E06103B006B780D /* thumbnailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = thumbnailCollectionViewCell.m; path = View/thumbnailCollectionViewCell.m; sourceTree = "<group>"; };
+		5717515A1E06103B006B780D /* thumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = thumbnailCollectionViewCell.xib; path = View/thumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
+		5717515D1E063527006B780D /* 1482052073_More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1482052073_More.png; sourceTree = "<group>"; };
+		5717515E1E063527006B780D /* 1482052087_People-MSN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1482052087_People-MSN.png"; sourceTree = "<group>"; };
+		571751611E0638D9006B780D /* shigemi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shigemi.jpg; sourceTree = "<group>"; };
+		571751621E0638D9006B780D /* yoshimi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoshimi.jpg; sourceTree = "<group>"; };
+		571751651E064064006B780D /* yumemiru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yumemiru.jpg; sourceTree = "<group>"; };
+		571751671E06417A006B780D /* Powerup_fpv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Powerup_fpv.jpg; sourceTree = "<group>"; };
+		571751691E064297006B780D /* photo_00111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo_00111.jpg; sourceTree = "<group>"; };
 		572A1A651E02B96D006F0604 /* MiSTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiSTERY.png; sourceTree = "<group>"; };
 		572A1A701E02BBEE006F0604 /* 背景オレンジ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景オレンジ.png"; sourceTree = "<group>"; };
 		572A1A781E02C31E006F0604 /* blue-tag-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-tag-selected.png"; sourceTree = "<group>"; };
@@ -325,6 +352,9 @@
 				57FB7ADC1DFFD4A1005E25EE /* DropDownTableViewController.xib */,
 				57FB7ADF1DFFD9D3005E25EE /* DropDownView.h */,
 				57FB7AE01DFFD9D3005E25EE /* DropDownView.m */,
+				571751581E06103B006B780D /* thumbnailCollectionViewCell.h */,
+				571751591E06103B006B780D /* thumbnailCollectionViewCell.m */,
+				5717515A1E06103B006B780D /* thumbnailCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -332,6 +362,17 @@
 		57EF29961DEAB77F00B067D4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				571751691E064297006B780D /* photo_00111.jpg */,
+				571751671E06417A006B780D /* Powerup_fpv.jpg */,
+				571751651E064064006B780D /* yumemiru.jpg */,
+				571751611E0638D9006B780D /* shigemi.jpg */,
+				571751621E0638D9006B780D /* yoshimi.jpg */,
+				5717515D1E063527006B780D /* 1482052073_More.png */,
+				5717515E1E063527006B780D /* 1482052087_People-MSN.png */,
+				571751561E057021006B780D /* 1482001656_home.png */,
+				571751501E0568F2006B780D /* blue-select.png */,
+				571751511E0568F2006B780D /* green-select.png */,
+				571751521E0568F2006B780D /* red-select.png */,
 				5717514C1E03EA0D006B780D /* 1481901759_like-thumbs-up-hand-social-media.png */,
 				5717514D1E03EA0D006B780D /* 1481901776_mail.png */,
 				571751471E02E50F006B780D /* result-back.png */,
@@ -501,6 +542,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57EF29981DEAB79000B067D4 /* hashimoto.JPG in Resources */,
+				5717516A1E064297006B780D /* photo_00111.jpg in Resources */,
+				571751631E0638D9006B780D /* shigemi.jpg in Resources */,
 				57FB7AC11DFFBC05005E25EE /* 24-24mail.png in Resources */,
 				570650541DF3F7F8008B9DF0 /* 1480856779_user.png in Resources */,
 				572A1A821E02C31E006F0604 /* green-tag-selected.png in Resources */,
@@ -509,8 +552,10 @@
 				572A1A891E02C540006F0604 /* MyStory.png in Resources */,
 				572A1A8F1E02C61D006F0604 /* green-box.png in Resources */,
 				57FB7AC41DFFBD92005E25EE /* 24-24back.png in Resources */,
+				5717515F1E063527006B780D /* 1482052073_More.png in Resources */,
 				57EF294F1DE9BF8600B067D4 /* LaunchScreen.storyboard in Resources */,
 				57EF29951DEAB0F100B067D4 /* ResultTableViewCell.xib in Resources */,
+				571751551E0568F2006B780D /* red-select.png in Resources */,
 				5717514F1E03EA0D006B780D /* 1481901776_mail.png in Resources */,
 				572A1A801E02C31E006F0604 /* blue-tag.png in Resources */,
 				57EF294C1DE9BF8600B067D4 /* Assets.xcassets in Resources */,
@@ -518,23 +563,31 @@
 				572A1A811E02C31E006F0604 /* box.png in Resources */,
 				57FB7ABD1DFFBA7F005E25EE /* 20-20setting.png in Resources */,
 				572A1A851E02C31E006F0604 /* red-tag.png in Resources */,
+				571751601E063527006B780D /* 1482052087_People-MSN.png in Resources */,
 				57FB7AC21DFFBC05005E25EE /* 24-24world.png in Resources */,
 				57EF298B1DEAA27100B067D4 /* MyCollectionViewCell.xib in Resources */,
+				571751641E0638D9006B780D /* yoshimi.jpg in Resources */,
+				571751661E064064006B780D /* yumemiru.jpg in Resources */,
 				571751481E02E50F006B780D /* result-back.png in Resources */,
 				5717514E1E03EA0D006B780D /* 1481901759_like-thumbs-up-hand-social-media.png in Resources */,
 				572A1A8B1E02C545006F0604 /* History.png in Resources */,
+				571751541E0568F2006B780D /* green-select.png in Resources */,
 				57FB7AD01DFFC339005E25EE /* HelpView.xib in Resources */,
 				572A1A831E02C31E006F0604 /* green-tag.png in Resources */,
+				571751571E057021006B780D /* 1482001656_home.png in Resources */,
 				572A1A8E1E02C61D006F0604 /* blue-box.png in Resources */,
 				572A1A7F1E02C31E006F0604 /* blue-tag-selected.png in Resources */,
+				571751681E06417A006B780D /* Powerup_fpv.jpg in Resources */,
 				57EF294A1DE9BF8600B067D4 /* Main.storyboard in Resources */,
 				572A1A841E02C31E006F0604 /* red-tag-selected.png in Resources */,
 				57FB7AC61DFFBE66005E25EE /* 24-24help.png in Resources */,
 				57FB7ADE1DFFD4A1005E25EE /* DropDownTableViewController.xib in Resources */,
 				572A1A711E02BBEE006F0604 /* 背景オレンジ.png in Resources */,
+				5717515C1E06103B006B780D /* thumbnailCollectionViewCell.xib in Resources */,
 				57FB7ABE1DFFBA7F005E25EE /* 24-24setting.png in Resources */,
 				570650681DF403D9008B9DF0 /* aburata.jpg in Resources */,
 				572A1A691E02B96E006F0604 /* MiSTERY.png in Resources */,
+				571751531E0568F2006B780D /* blue-select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +742,7 @@
 				57EF29441DE9BF8600B067D4 /* AppDelegate.m in Sources */,
 				57EF29851DE9C3D100B067D4 /* DetailViewController.m in Sources */,
 				57EF29791DE9C05E00B067D4 /* LoginController.m in Sources */,
+				5717515B1E06103B006B780D /* thumbnailCollectionViewCell.m in Sources */,
 				5706504F1DF3E003008B9DF0 /* peopleInformation.m in Sources */,
 				570650631DF3FCA6008B9DF0 /* HistoryViewController.m in Sources */,
 				570DA8D11DFAFDA900864087 /* HomeViewController.m in Sources */,

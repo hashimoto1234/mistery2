@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "HomeViewController.h"
 
 @interface DetailViewController ()<UIScrollViewDelegate>
 
@@ -45,6 +46,36 @@
     [super viewDidLoad];
 
 
+    //NavigationBar設定
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"24-24back.png"] imageWithRenderingMode:UIImageRenderingModeAutomatic	]
+                                                             style:UIBarButtonItemStylePlain
+                                                            target:self
+                                                            action:@selector(tapBackButton:)];
+    self.navigationItem.leftBarButtonItem = item;
+    
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"1482001656_home.png"] imageWithRenderingMode:UIImageRenderingModeAutomatic	]
+                                                              style:UIBarButtonItemStylePlain
+                                                             target:self
+                                                             action:@selector(tapHomeButton:)];
+    
+    
+    self.navigationItem.rightBarButtonItem = right;
+    
+    //-------------Navigation Barに画像設定-----------
+    
+    //-------------Navigation Barに画像設定-----------
+    
+    UIImage *titleImage = [UIImage imageNamed:@"Mistery.png"];
+    UIImageView *titleImageView = [[UIImageView alloc] initWithImage:titleImage];
+    titleImageView.frame = CGRectMake(0, 0, titleImage.size.width * 0.2, titleImage.size.height * 0.2);//適当にサイズ調整
+    
+    UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(-titleImage.size.width*0.3, 0, titleImageView.frame.size.width , titleImageView.frame.size.height)];
+    [titleView addSubview:titleImageView];
+    self.navigationItem.titleView = titleView;
+    
+    //----------------------------------------------
+    
     
     _myScrollView.scrollEnabled = YES;
     _myScrollView.delegate = self;
@@ -73,5 +104,14 @@
                                   45);
 }
 
+-(void)tapBackButton:(UIButton*)button{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)tapHomeButton:(UIButton*)button{
+    NSInteger count = self.navigationController.viewControllers.count - 5;
+    HomeViewController *homeVC = [self.navigationController.viewControllers objectAtIndex:count];
+    [self.navigationController popToViewController:homeVC animated:YES];
+}
 
 @end

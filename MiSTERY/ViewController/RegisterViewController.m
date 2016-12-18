@@ -7,16 +7,42 @@
 //
 
 #import "RegisterViewController.h"
+#import "ActionSheetStringPicker.h"
 
 @interface RegisterViewController()
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *userID;
+@property (weak, nonatomic) IBOutlet UITextField *passwordConfirm;
+@property (weak, nonatomic) IBOutlet UITextField *mail;
+@property (weak, nonatomic) IBOutlet UIButton *ageButton;
+@property (weak, nonatomic) IBOutlet UIButton *locationButton;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIImageView *plus;
+
+@property NSArray * ageArray;
+@property NSArray * locationArray;
 
 @end
 
 @implementation RegisterViewController
+- (IBAction)userID:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _userID.placeholder = @"ユーザーID（必須）";
+    _password.placeholder = @"パスワード（必須）";
+
+    _mail.placeholder = @"名前（必須）";
+
+    
+    [_password setSecureTextEntry:YES];
+    [_passwordConfirm setSecureTextEntry:YES];
+    
+    _ageArray = @[@"25歳"];
+    _locationArray = @[@"大阪府"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,15 +50,54 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapAgeButton:(id)sender {
+    
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"業界選択"
+                                            rows:_ageArray
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           _ageButton.titleLabel.text = _ageArray[selectedIndex];
 
-/*
-#pragma mark - Navigation
+                                           
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         
+                                         
+                                         
+                                     }
+                                          origin:sender];
+    
+    
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
-*/
+
+- (IBAction)tapLocationButton:(id)sender {
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"業界選択"
+                                            rows:_locationArray
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           
+                                           _locationButton.titleLabel.text = _locationArray[selectedIndex];
+                                           
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         
+                                         
+                                         
+                                     }
+                                          origin:sender];
+    
+    
+
+}
+- (IBAction)tapRegisterButton:(id)sender {
+    _image.image = [UIImage imageNamed:@"aburata.jpg"];
+    _plus.hidden = YES;
+    
+}
+
 
 @end

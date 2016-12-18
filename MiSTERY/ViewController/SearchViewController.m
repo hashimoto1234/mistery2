@@ -18,9 +18,18 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *topicsCollectionView;
 
 @property  NSArray * displayInfo1;
+@property (weak, nonatomic) IBOutlet UILabel *selected01;
+@property (weak, nonatomic) IBOutlet UIImageView *selected01image;
+@property (weak, nonatomic) IBOutlet UILabel *selected02;
+@property (weak, nonatomic) IBOutlet UIImageView *selected02image;
+@property (weak, nonatomic) IBOutlet UILabel *selected03;
+@property (weak, nonatomic) IBOutlet UIImageView *selected03image;
+
+@property NSInteger count;
 
 @property NSArray * IT_keywords;
 
+@property NSInteger selectedIndex;
 
 @property  UIView * helpView;
 @property (weak, nonatomic) IBOutlet UIButton *selectButton;
@@ -44,6 +53,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _count = 0;
+    
     //デリゲート・データソースの指定
     _myCollectionView.delegate = self;
     _myCollectionView.dataSource = self;
@@ -58,7 +69,29 @@
     _myCollectionView.backgroundColor = [UIColor clearColor];
     _topicsCollectionView.backgroundColor = [UIColor clearColor];
     
-    _industryArray = @[@"IT",@"コンサル",@"教育",@"広告",@"アパレル",@"出版",@"不動産",@"映像",@"人材",@"小売",@"医療",@"旅行",@"ゲーム",@"美容",@"メーカー",@"サービス",@"金融",@"NPO",@"商社",@"士業"];
+
+    _industryArray = @[
+                       @"IT/Web",
+                       @"教育",
+                       @"サービス/飲食",
+                       @"広告/PR",
+                       @"映像",
+                       @"人材",
+                       @"コンサルティング",
+                       @"出版/雑誌",
+                       @"小売",
+                       @"ゲーム",
+                       @"アパレル/ファッション",
+                       @"不動産/建築",
+                       @"美容/化粧品",
+                       @"金融",
+                       @"商社",
+                       @"医療/福祉",
+                       @"旅行",
+                       @"メーカー",
+                       @"NPO/ボランティア",
+                       @"士業",
+                       ];
     
     _topicsArray = @[@"ドローン", @"IoT", @"Zigbee",@"ブロックチェーン"];
     
@@ -75,7 +108,7 @@
     _selectButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     
     //各セクションに表示する情報（仮データ）
-    self.displayInfo1 = @[@"IT", @"教育", @"スポーツ", @"ビジネス", @"飲食", @"デザイン"];
+//    self.displayInfo1 = @[@"IT", @"教育", @"スポーツ", @"ビジネス", @"飲食", @"デザイン"];
     
     //IT
     _IT_keywords = @[@"プログラミング",@"AI",@"pepper",@"ロボティクス",@"IoT"];
@@ -163,7 +196,6 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    //セクションは3つに固定
     return 1;
 }
 
@@ -197,15 +229,17 @@
     
     if(collectionView.tag == 0){
         
-        
+        cell.myImageView.image = [UIImage imageNamed:@"red-tag.png"];
+
         //選択した業界がITの場合
         if([_selectButton.titleLabel.text isEqualToString:@"IT"]){
             _displayInfo1 = _IT_keywords.copy;
         }
+
             cell.myLabel.text = _displayInfo1[indexPath.row];
         
         // 行のスクロール
-        [_myCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
+//        [_myCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
         
         
     }else{
@@ -238,6 +272,24 @@
     
     cell.myImageView.image = [UIImage imageNamed:@"red-tag-selected.png"];
     
+    if(_count == 0){
+        _selected01.text = _displayInfo1[indexPath.row];
+        _selected01.tintColor = [UIColor redColor];
+        _selected01image.image = [UIImage imageNamed:@"red-tag-selected.png"];
+
+        _count++;
+    }else if (_count == 1){
+        _selected02.text = _displayInfo1[indexPath.row];
+        _selected02.tintColor = [UIColor blackColor];
+        _selected02image.image = [UIImage imageNamed:@"red-tag-selected.png"];
+
+        _count++;
+    }else if (_count == 2){
+        _selected03.text = _displayInfo1[indexPath.row];
+        _selected03.tintColor = [UIColor blackColor];
+        _selected03image.image = [UIImage imageNamed:@"red-tag-selected.png"];
+
+    }
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -258,8 +310,15 @@
                                 initialSelection:0
                                        doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
                                            
-                                           _selectButton.titleLabel.text = _industryArray[selectedIndex];
                                            
+                                           _selectedIndex = selectedIndex;
+                                           
+                                           [self reload];
+
+                                           [_myCollectionView reloadData];
+                                       
+                                           _selectButton.titleLabel.text = _industryArray[selectedIndex];
+                                       
                                        }
                                      cancelBlock:^(ActionSheetStringPicker *picker) {
                                      }
@@ -281,7 +340,24 @@ numberOfRowsInComponent:(NSInteger)component{
     
 }
 
+-(void)reload{
+    
+    switch (_selectedIndex) {
+        case 0:
+            _displayInfo1 = @[@"AI",@"IoT",@"HTML",@"CSS",@"photoshop",@"機械学習",@"ロボット",@"基本情報",@"サーバー",@"Python",@"Java",@"システム",@"Ruby",@"ICT",@"PC"];
+            break;
+            
+        case 1:
+            _displayInfo1 = @[@"塾",@"家庭教師",@"受験",@"英語",@"中国語",@"留学",@"スポーツ",@"学童保育",@"ICT",@"料理",@"楽器",@"個別指導",@"日本語",@"陶芸",@"プログラミング"];
+            break;
 
-
+        case 2:
+            _displayInfo1 = @[@"居酒屋",@"バー",@"カフェ",@"ラーメン",@"接客",@"コンビニ",@"通訳",@"派遣",@"キッチン",@"宅配",@"受付",@"介護",@"コールセンター",@"警備員",@"事務"];
+            
+        default:
+            break;
+    }
+    
+}
 
 @end
